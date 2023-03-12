@@ -5,7 +5,7 @@ public class CHGlassmorphismView: UIView {
     private let animator = UIViewPropertyAnimator(duration: 0.5, curve: .linear)
     private var blurView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
     private let backgroundView = UIView()
-    override var backgroundColor: UIColor? {
+    public override var backgroundColor: UIColor? {
         get {
             return .clear
         }
