@@ -1,5 +1,5 @@
 # CHGlassmorphismView
-![glassmorphismExplain](https://user-images.githubusercontent.com/73422344/224549511-73c2c230-ba06-4413-9a9d-6ae32cd0cbd4.png)
+![frontPhoto](https://user-images.githubusercontent.com/73422344/224745495-d3280067-b278-4ea0-846c-9237a1b14b13.png)
 ### ⚠️ still in progress ⚠️
 
 ## Requirements
