@@ -35,7 +35,7 @@ glassmorphismView.setTheme(theme: .light) // choose theme .light or .dark
 ```
 | Light theme | dark theme |
 | :-: | :-: |
-| <img src="https://user-images.githubusercontent.com/73422344/224717465-028c8887-083d-4991-a4d8-c2e48dcab27c.png" width=250> | <img src="https://user-images.githubusercontent.com/73422344/224717507-192408ee-7bec-4297-be67-ec943307cc41.png" width=250> |
+| <img src="https://user-images.githubusercontent.com/73422344/224743779-0b29a653-5d8c-409a-b9a2-355f933521e7.png" width=250> | <img src="https://user-images.githubusercontent.com/73422344/224717507-192408ee-7bec-4297-be67-ec943307cc41.png" width=250> |
 
 ```swift
 // MARK: - [Blur Density]
