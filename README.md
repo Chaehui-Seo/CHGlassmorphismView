@@ -45,3 +45,14 @@ glassmorphismView.changeBlurDensity(with: 0.5) // value from 0 to 1 is available
 // MARK: - [Corner Radius]
 glassmorphismView.setCornerRadius(30) // change cornerRadius as you want (default value is 20)
 ```
+
+## Caution
+Be aware that any views underneath blurred view got affected by glassmorphism effect. That means if some views are inserted before blurred view, it would not be visible as expected.
+Do not insert any views at 0 if you don’t want the elements to be dimmed
+```swift
+// DO ⭕️
+glassmorphismView.addSubview(yourOwnView)
+
+// DO NOT ❌
+glassmorphismView.insertSubview(yourOwnView, at: 0)
+```
