@@ -28,6 +28,10 @@ public class CHGlassmorphismView: UIView {
         animator.pauseAnimation()
     }
     
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
     // MARK: - Public Method
     /// Customizes blur density of the view.
     /// - parameters:
