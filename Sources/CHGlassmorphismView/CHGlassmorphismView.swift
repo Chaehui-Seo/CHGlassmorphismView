@@ -1,5 +1,6 @@
 import UIKit
 
+@IBDesignable
 public class CHGlassmorphismView: UIView {
     // MARK: - Properties
     private let animator = UIViewPropertyAnimator(duration: 0.5, curve: .linear)
