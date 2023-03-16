@@ -24,8 +24,7 @@ import CHGlassmorphismView
 
 let glassmorphismView = CHGlassmorphismView()
 ```
-<br>
-METHOD #2<br>
+METHOD #2 <br>
 Or make existing UIView as glassmorphism view by changing the Custom Class to `CHGlassmorphismView`
 <img width="700" alt="storyboard" src="https://user-images.githubusercontent.com/73422344/225058917-118067e4-eaab-4a3f-ac72-326ac5d203d0.png"> <br>
 
