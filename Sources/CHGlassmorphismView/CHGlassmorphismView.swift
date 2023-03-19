@@ -48,7 +48,7 @@ public class CHGlassmorphismView: UIView {
             self.blurView.backgroundColor = UIColor.clear
             self.layer.borderColor = UIColor.white.withAlphaComponent(0.5).cgColor
         case .dark:
-            self.blurView.backgroundColor = UIColor.black.withAlphaComponent(0.45)
+            self.blurView.backgroundColor = UIColor.black.withAlphaComponent(0.35)
             self.layer.borderColor = UIColor.white.withAlphaComponent(0.3).cgColor
         }
     }
