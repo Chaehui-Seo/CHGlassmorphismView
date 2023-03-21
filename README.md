@@ -41,6 +41,9 @@ glassmorphismView.setTheme(theme: .light) // choose theme .light or .dark
 // MARK: - [Blur Density]
 glassmorphismView.changeBlurDensity(with: 0.5) // value from 0 to 1 is available
 ```
+| Light theme | dark theme |
+| :-: | :-: |
+| ![Simulator Screen Recording - iPhone 11 - 2023-03-22 at 00 45 27](https://user-images.githubusercontent.com/73422344/226663271-572b705b-df21-4dcd-8745-7e56628bcb4d.gif) | ![Simulator Screen Recording - iPhone 11 - 2023-03-22 at 00 45 54](https://user-images.githubusercontent.com/73422344/226664138-af73c66a-86f3-4216-bd28-f945838dbe78.gif) |
 ```swift
 // MARK: - [Corner Radius]
 glassmorphismView.setCornerRadius(30) // change cornerRadius as you want (default value is 20)
