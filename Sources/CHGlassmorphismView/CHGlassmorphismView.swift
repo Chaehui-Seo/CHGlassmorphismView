@@ -5,6 +5,7 @@ public class CHGlassmorphismView: UIView {
     // MARK: - Properties
     private let animator = UIViewPropertyAnimator(duration: 0.5, curve: .linear)
     private var blurView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+    private var animatorCompletionValue: CGFloat = 0.35
     private let backgroundView = UIView()
     public override var backgroundColor: UIColor? {
         get {
@@ -37,7 +38,8 @@ public class CHGlassmorphismView: UIView {
     /// - parameters:
     ///     - density:  value between 0 ~ 1 (default: 0.65)
     public func changeBlurDensity(with density: CGFloat) {
-        self.animator.fractionComplete = (1 - density)
+        self.animatorCompletionValue = (1 - density)
+        self.animator.fractionComplete = animatorCompletionValue
     }
     
     /// Customizes theme by changing base view's background color.
@@ -45,10 +47,24 @@ public class CHGlassmorphismView: UIView {
     public func setTheme(theme: CHTheme) {
         switch theme {
         case .light:
+            self.blurView.effect = nil
+            self.blurView.effect =  UIBlurEffect(style: .light)
             self.blurView.backgroundColor = UIColor.clear
+            self.animator.stopAnimation(true)
+            self.animator.addAnimations {
+                self.blurView.effect = nil
+            }
+            self.animator.fractionComplete = animatorCompletionValue
             self.layer.borderColor = UIColor.white.withAlphaComponent(0.5).cgColor
         case .dark:
+            self.blurView.effect = nil
+            self.blurView.effect = UIBlurEffect(style: .dark)
             self.blurView.backgroundColor = UIColor.black.withAlphaComponent(0.35)
+            self.animator.stopAnimation(true)
+            self.animator.addAnimations {
+                self.blurView.effect = nil
+            }
+            self.animator.fractionComplete = animatorCompletionValue
             self.layer.borderColor = UIColor.white.withAlphaComponent(0.3).cgColor
         }
     }
@@ -96,7 +112,7 @@ public class CHGlassmorphismView: UIView {
         animator.addAnimations {
             self.blurView.effect = nil
         }
-        animator.fractionComplete = 0.35 // default value is 0.35
+        animator.fractionComplete = animatorCompletionValue // default value is 0.35
     }
     
     // MARK: - Theme
