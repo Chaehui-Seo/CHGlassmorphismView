@@ -81,7 +81,6 @@ public class CHGlassmorphismView: UIView {
         blurView.backgroundColor = UIColor.clear
         blurView.translatesAutoresizingMaskIntoConstraints = false
         backgroundView.insertSubview(blurView, at: 0)
-        blurView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             backgroundView.topAnchor.constraint(equalTo: self.topAnchor),
             backgroundView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
