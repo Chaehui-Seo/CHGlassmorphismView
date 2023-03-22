@@ -72,7 +72,6 @@ public class CHGlassmorphismView: UIView {
     /// Changes cornerRadius of the view.
     public func setCornerRadius(_ value: CGFloat) {
         self.backgroundView.layer.cornerRadius = value
-        self.backgroundView.layer.shadowRadius = value
         self.blurView.layer.cornerRadius = value
     }
     
