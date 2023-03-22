@@ -76,6 +76,19 @@ public class CHGlassmorphismView: UIView {
         self.blurView.layer.cornerRadius = value
     }
     
+    /// Change distance of the view.
+    /// - parameters:
+    ///     - density:  value between 0 ~ 100 (default: 20)
+    public func setDistance(_ value: CGFloat) {
+        var distance = value
+        if value < 0 {
+            distance = 0
+        } else if value > 100 {
+            distance = 100
+        }
+        self.backgroundView.layer.shadowRadius = distance
+    }
+    
     // MARK: - Private Method
     private func initialize() {
         // backgoundView(baseView) setting
