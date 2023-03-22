@@ -10,7 +10,7 @@ Glassmorphism is a design style using a background blur effect, which makes the 
 Use [Swift Package Manager](https://swift.org/package-manager/) by adding following line to `Package.swift`:
 ```
 dependencies: [
- .package(url: "https://github.com/Chaehui-Seo/CHGlassmorphismView.git", from: "0.0.1")
+ .package(url: "https://github.com/Chaehui-Seo/CHGlassmorphismView.git", from: "0.0.2")
 ]
 ```
 
