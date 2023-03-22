@@ -27,6 +27,7 @@ public class CHGlassmorphismView: UIView {
     
     deinit {
         animator.pauseAnimation()
+        animator.stopAnimation(true)
     }
     
     public override func awakeFromNib() {
