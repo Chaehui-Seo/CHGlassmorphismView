@@ -48,7 +48,7 @@ public class CHGlassmorphismView: UIView {
         switch theme {
         case .light:
             self.blurView.effect = nil
-            self.blurView.effect =  UIBlurEffect(style: .light)
+            self.blurView.effect = UIBlurEffect(style: .light)
             self.blurView.backgroundColor = UIColor.clear
             self.animator.stopAnimation(true)
             self.animator.addAnimations {
