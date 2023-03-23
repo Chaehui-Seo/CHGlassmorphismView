@@ -48,6 +48,17 @@ glassmorphismView.changeBlurDensity(with: 0.5) // value from 0 to 1 is available
 // MARK: - [Corner Radius]
 glassmorphismView.setCornerRadius(30) // change cornerRadius as you want (default value is 20)
 ```
+```swift
+// MARK: - [Shadow Radius (Shadow Spread)]
+glassmorphismView.setDistance(30) // change shadowRadius(shadow spread) that makes a sense of distance  (default value is 20)
+```
+
+## SampleApp
+You can run SampleApp Project located in `SampleApp` folder.
+All the functions that provided by the package are testable through the SampleApp project.
+
+![Simulator Screen Recording - iPhone 11 - 2023-03-23 at 18 47 01](https://user-images.githubusercontent.com/73422344/227165502-9c7548a7-dd1b-4273-9196-d923bd3e8ac4.gif)
+
 
 ## Caution
 Be aware that any views underneath blurred view got affected by glassmorphism effect. That means if some views are inserted before blurred view, it would not be visible as expected.
