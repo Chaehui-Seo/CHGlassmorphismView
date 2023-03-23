@@ -38,7 +38,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Wza-Mf-stg">
-                                <rect key="frame" x="30" y="494" width="354" height="285"/>
+                                <rect key="frame" x="30" y="474" width="354" height="285"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuS-4M-bmE">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
@@ -173,9 +173,10 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Co-wG-bld" secondAttribute="bottom" id="0dq-vA-UUb"/>
                             <constraint firstItem="L7n-Gl-yff" firstAttribute="leading" secondItem="5Co-wG-bld" secondAttribute="leading" constant="50" id="0fX-sC-I7F"/>
-                            <constraint firstItem="L7n-Gl-yff" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="8f1-zY-nHw"/>
-                            <constraint firstItem="Wza-Mf-stg" firstAttribute="top" secondItem="L7n-Gl-yff" secondAttribute="bottom" constant="50" id="Hex-3I-i4x"/>
+                            <constraint firstItem="L7n-Gl-yff" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="250" constant="100" id="8f1-zY-nHw"/>
+                            <constraint firstItem="Wza-Mf-stg" firstAttribute="top" secondItem="L7n-Gl-yff" secondAttribute="bottom" constant="30" id="Hex-3I-i4x"/>
                             <constraint firstItem="5Co-wG-bld" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="J1l-bS-6Hg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wza-Mf-stg" secondAttribute="bottom" constant="20" id="MGM-Ao-IjE"/>
                             <constraint firstItem="Wza-Mf-stg" firstAttribute="leading" secondItem="5Co-wG-bld" secondAttribute="leading" constant="30" id="Vig-Va-ADS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Co-wG-bld" secondAttribute="trailing" id="YDx-mH-44G"/>
                             <constraint firstItem="L7n-Gl-yff" firstAttribute="centerX" secondItem="5Co-wG-bld" secondAttribute="centerX" id="Zc6-Yz-dX8"/>
