@@ -9,18 +9,20 @@ import UIKit
 import CHGlassmorphismView
 
 class SampleAppViewController: UIViewController {
-
+    // MARK: - Properties
+    // safeArea
     @IBOutlet weak var imageTop: NSLayoutConstraint!
     @IBOutlet weak var imageBottom: NSLayoutConstraint!
-    
+    // testTarget (CHGlassmorphismView)
     @IBOutlet weak var glassmorphismView: CHGlassmorphismView!
-    
+    // setting component
     @IBOutlet weak var densitySlider: UISlider!
     @IBOutlet weak var cornerSlider: UISlider!
     @IBOutlet weak var distanceSlider: UISlider!
     @IBOutlet weak var lightModeSwitch: UISwitch!
     @IBOutlet weak var resetButton: UIButton!
     
+    // MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initValues()
@@ -32,6 +34,7 @@ class SampleAppViewController: UIViewController {
         imageBottom.constant = -(self.view.safeAreaInsets.bottom)
     }
     
+    // MARK: - Set UI
     func initValues() {
         densitySlider.minimumValue = 0
         densitySlider.maximumValue = 1
@@ -45,6 +48,7 @@ class SampleAppViewController: UIViewController {
         lightModeSwitch.isOn = true
     }
 
+    // MARK: - Change GlassmorphismView Setting
     @IBAction func densityValueChanged(_ sender: Any) {
         let densityValue = CGFloat(densitySlider.value)
         glassmorphismView.changeBlurDensity(with: densityValue)
