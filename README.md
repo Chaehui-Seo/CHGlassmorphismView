@@ -17,7 +17,7 @@ dependencies: [
 ## Usage
 ### Create glassmorphismView
 METHOD #1 <br>
-Import `CHGlassmorphismView` module to your controller. Now, you can create glassmorphism view programmatically like code below.
+Import `CHGlassmorphismView` module in your viewController. Now, you can create glassmorphism view programmatically like code below.
 
 ```swift
 import CHGlassmorphismView
