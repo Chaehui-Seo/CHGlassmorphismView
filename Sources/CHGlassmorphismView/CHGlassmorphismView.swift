@@ -35,14 +35,6 @@ public class CHGlassmorphismView: UIView {
     }
     
     // MARK: - Public Method
-    /// Customizes blur density of the view.
-    /// - parameters:
-    ///     - density:  value between 0 ~ 1 (default: 0.65)
-    public func setBlurDensity(with density: CGFloat) {
-        self.animatorCompletionValue = (1 - density)
-        self.animator.fractionComplete = animatorCompletionValue
-    }
-    
     /// Customizes theme by changing base view's background color.
     /// .light and .dark is available.
     public func setTheme(theme: CHTheme) {
@@ -68,6 +60,14 @@ public class CHGlassmorphismView: UIView {
             self.animator.fractionComplete = animatorCompletionValue
             self.layer.borderColor = UIColor.white.withAlphaComponent(0.3).cgColor
         }
+    }
+    
+    /// Customizes blur density of the view.
+    /// - parameters:
+    ///     - density:  value between 0 ~ 1 (default: 0.65)
+    public func setBlurDensity(with density: CGFloat) {
+        self.animatorCompletionValue = (1 - density)
+        self.animator.fractionComplete = animatorCompletionValue
     }
     
     /// Changes cornerRadius of the view.
