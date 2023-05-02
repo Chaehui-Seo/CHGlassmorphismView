@@ -38,7 +38,7 @@ public class CHGlassmorphismView: UIView {
     /// Customizes blur density of the view.
     /// - parameters:
     ///     - density:  value between 0 ~ 1 (default: 0.65)
-    public func changeBlurDensity(with density: CGFloat) {
+    public func setBlurDensity(with density: CGFloat) {
         self.animatorCompletionValue = (1 - density)
         self.animator.fractionComplete = animatorCompletionValue
     }

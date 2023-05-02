@@ -51,7 +51,7 @@ class SampleAppViewController: UIViewController {
     // MARK: - Change GlassmorphismView Setting
     @IBAction func densityValueChanged(_ sender: Any) {
         let densityValue = CGFloat(densitySlider.value)
-        glassmorphismView.changeBlurDensity(with: densityValue)
+        glassmorphismView.setBlurDensity(with: densityValue)
     }
     
     @IBAction func cornerValueChanged(_ sender: Any) {
@@ -76,7 +76,7 @@ class SampleAppViewController: UIViewController {
     
     @IBAction func resetButtonDidTap(_ sender: Any) {
         densitySlider.value = 0.65
-        glassmorphismView.changeBlurDensity(with: 0.65)
+        glassmorphismView.setBlurDensity(with: 0.65)
         cornerSlider.value = 20
         glassmorphismView.setCornerRadius(20)
         distanceSlider.value = 20
