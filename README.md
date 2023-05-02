@@ -1,16 +1,17 @@
 # CHGlassmorphismView
 ![frontPhoto](https://user-images.githubusercontent.com/73422344/224745495-d3280067-b278-4ea0-846c-9237a1b14b13.png)
+
 Glassmorphism is a design style using a background blur effect, which makes the view look like a floating translucent glass.
 ### ⚠️ still in progress ⚠️
 
 ## Requirements
-- iOS 11.0+
+- iOS 13.0+
 
 ## Installation
 Use [Swift Package Manager](https://swift.org/package-manager/) by adding following line to `Package.swift`:
 ```
 dependencies: [
- .package(url: "https://github.com/Chaehui-Seo/CHGlassmorphismView.git", from: "0.0.2")
+ .package(url: "https://github.com/Chaehui-Seo/CHGlassmorphismView.git", from: "0.0.3")
 ]
 ```
 
@@ -26,6 +27,7 @@ let glassmorphismView = CHGlassmorphismView()
 ```
 METHOD #2 <br>
 Or make existing UIView as glassmorphism view by changing the Custom Class to `CHGlassmorphismView`
+
 <img width="700" alt="storyboard" src="https://user-images.githubusercontent.com/73422344/225058917-118067e4-eaab-4a3f-ac72-326ac5d203d0.png"> <br>
 
 ### Change customizing options
@@ -39,7 +41,7 @@ glassmorphismView.setTheme(theme: .light) // choose theme .light or .dark
 
 ```swift
 // MARK: - [Blur Density]
-glassmorphismView.changeBlurDensity(with: 0.5) // value from 0 to 1 is available
+glassmorphismView.setBlurDensity(with: 0.5) // value from 0 to 1 is available
 ```
 | Light theme | dark theme |
 | :-: | :-: |
