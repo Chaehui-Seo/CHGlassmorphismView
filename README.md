@@ -33,7 +33,7 @@ Or make existing UIView as glassmorphism view by changing the Custom Class to `C
 ### Change customizing options
 ```swift
 // MARK: - [Theme]
-glassmorphismView.setTheme(theme: .light) // choose theme .light or .dark
+glassmorphismView.setTheme(theme: .light) // choose theme .light or .dark (default value is .light)
 ```
 | Light theme | dark theme |
 | :-: | :-: |
@@ -41,7 +41,7 @@ glassmorphismView.setTheme(theme: .light) // choose theme .light or .dark
 
 ```swift
 // MARK: - [Blur Density]
-glassmorphismView.setBlurDensity(with: 0.5) // value from 0 to 1 is available
+glassmorphismView.setBlurDensity(with: 0.5) // value from 0 to 1 is available (default value is 0.65)
 ```
 | Light theme | dark theme |
 | :-: | :-: |
