@@ -63,6 +63,7 @@ public class CHGlassmorphismView: UIView {
     }
     
     /// Customizes blur density of the view.
+    /// Value can be set between 0 ~ 1 (default: 0.65)
     /// - parameters:
     ///     - density:  value between 0 ~ 1 (default: 0.65)
     public func setBlurDensity(with density: CGFloat) {
@@ -77,6 +78,7 @@ public class CHGlassmorphismView: UIView {
     }
     
     /// Change distance of the view.
+    /// Value can be set between 0 ~ 100 (default: 20)
     /// - parameters:
     ///     - density:  value between 0 ~ 100 (default: 20)
     public func setDistance(_ value: CGFloat) {
