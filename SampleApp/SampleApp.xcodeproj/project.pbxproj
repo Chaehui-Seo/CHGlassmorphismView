@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0B3FA2E19F4C5BFFD4D117 /* libPods-SampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3B71D3395B1BAB88CC5A8B /* libPods-SampleApp.a */; };
 		6FECB4D429CC4EFE004FE914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FECB4D329CC4EFE004FE914 /* AppDelegate.swift */; };
 		6FECB4D629CC4EFE004FE914 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FECB4D529CC4EFE004FE914 /* SceneDelegate.swift */; };
 		6FECB4D829CC4EFE004FE914 /* SampleAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FECB4D729CC4EFE004FE914 /* SampleAppViewController.swift */; };
 		6FECB4DB29CC4EFE004FE914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FECB4D929CC4EFE004FE914 /* Main.storyboard */; };
 		6FECB4DD29CC4F00004FE914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FECB4DC29CC4F00004FE914 /* Assets.xcassets */; };
 		6FECB4E029CC4F00004FE914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FECB4DE29CC4F00004FE914 /* LaunchScreen.storyboard */; };
-		6FECB4EA29CC4F44004FE914 /* CHGlassmorphismView in Frameworks */ = {isa = PBXBuildFile; productRef = 6FECB4E929CC4F44004FE914 /* CHGlassmorphismView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,9 @@
 		6FECB4DC29CC4F00004FE914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FECB4DF29CC4F00004FE914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FECB4E129CC4F00004FE914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FECB4E729CC4F2D004FE914 /* CHGlassmorphismView */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CHGlassmorphismView; path = ..; sourceTree = "<group>"; };
+		8F3B71D3395B1BAB88CC5A8B /* libPods-SampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE9758A369EAA0414F0EE03 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		F8DBED7990A3A5F45F36CB84 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FECB4EA29CC4F44004FE914 /* CHGlassmorphismView in Frameworks */,
+				4C0B3FA2E19F4C5BFFD4D117 /* libPods-SampleApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,10 +45,10 @@
 		6FECB4C729CC4EFE004FE914 = {
 			isa = PBXGroup;
 			children = (
-				6FECB4E729CC4F2D004FE914 /* CHGlassmorphismView */,
 				6FECB4D229CC4EFE004FE914 /* SampleApp */,
 				6FECB4D129CC4EFE004FE914 /* Products */,
 				6FECB4E829CC4F44004FE914 /* Frameworks */,
+				ADEE661CED07608CC13A203B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +77,18 @@
 		6FECB4E829CC4F44004FE914 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F3B71D3395B1BAB88CC5A8B /* libPods-SampleApp.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADEE661CED07608CC13A203B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8DBED7990A3A5F45F36CB84 /* Pods-SampleApp.debug.xcconfig */,
+				CFE9758A369EAA0414F0EE03 /* Pods-SampleApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FECB4E429CC4F00004FE914 /* Build configuration list for PBXNativeTarget "SampleApp" */;
 			buildPhases = (
+				4C9E7C7EB3A8883F806D6BE8 /* [CP] Check Pods Manifest.lock */,
 				6FECB4CC29CC4EFE004FE914 /* Sources */,
 				6FECB4CD29CC4EFE004FE914 /* Frameworks */,
 				6FECB4CE29CC4EFE004FE914 /* Resources */,
@@ -95,9 +108,6 @@
 			dependencies = (
 			);
 			name = SampleApp;
-			packageProductDependencies = (
-				6FECB4E929CC4F44004FE914 /* CHGlassmorphismView */,
-			);
 			productName = SampleApp;
 			productReference = 6FECB4D029CC4EFE004FE914 /* SampleApp.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C9E7C7EB3A8883F806D6BE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FECB4CC29CC4EFE004FE914 /* Sources */ = {
@@ -297,6 +332,7 @@
 		};
 		6FECB4E529CC4F00004FE914 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8DBED7990A3A5F45F36CB84 /* Pods-SampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +361,7 @@
 		};
 		6FECB4E629CC4F00004FE914 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE9758A369EAA0414F0EE03 /* Pods-SampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -373,13 +410,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6FECB4E929CC4F44004FE914 /* CHGlassmorphismView */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = CHGlassmorphismView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6FECB4C829CC4EFE004FE914 /* Project object */;
 }
