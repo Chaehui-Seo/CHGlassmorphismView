@@ -8,11 +8,17 @@ Glassmorphism is a design style using a background blur effect, which makes the 
 - iOS 13.0+
 
 ## Installation
+### Swift Package Manager
 Use [Swift Package Manager](https://swift.org/package-manager/) by adding following line to `Package.swift`:
 ```
 dependencies: [
  .package(url: "https://github.com/Chaehui-Seo/CHGlassmorphismView.git", from: "0.0.4")
 ]
+```
+### Cocoapods
+Use [Cocoapods](https://cocoapods.org/) by adding following line to `Podfile`:
+```
+pod "CHGlassmorphismView", "~> 0.0.4"
 ```
 
 ## Usage
