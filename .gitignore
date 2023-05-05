@@ -88,3 +88,14 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Pods/
+
+SampleApp/Podfile.lock
+SampleApp/Pods/
+
+# Carthage
+Carthage/Build
+
+.build/
+.swiftpm/
