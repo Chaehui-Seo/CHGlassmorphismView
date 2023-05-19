@@ -41,7 +41,7 @@ Or make existing UIView as glassmorphism view by changing the Custom Class to `C
 // MARK: - [Theme]
 glassmorphismView.setTheme(theme: .light) // choose theme .light or .dark (default value is .light)
 ```
-| Light theme | dark theme |
+| Light theme | Dark theme |
 | :-: | :-: |
 | <img src="https://user-images.githubusercontent.com/73422344/224743779-0b29a653-5d8c-409a-b9a2-355f933521e7.png" width=250> | <img src="https://user-images.githubusercontent.com/73422344/224717507-192408ee-7bec-4297-be67-ec943307cc41.png" width=250> |
 
@@ -49,7 +49,7 @@ glassmorphismView.setTheme(theme: .light) // choose theme .light or .dark (defau
 // MARK: - [Blur Density]
 glassmorphismView.setBlurDensity(with: 0.5) // value from 0 to 1 is available (default value is 0.65)
 ```
-| Light theme | dark theme |
+| Light theme | Dark theme |
 | :-: | :-: |
 | ![Simulator Screen Recording - iPhone 11 - 2023-03-22 at 00 45 27](https://user-images.githubusercontent.com/73422344/226663271-572b705b-df21-4dcd-8745-7e56628bcb4d.gif) | ![Simulator Screen Recording - iPhone 11 - 2023-03-22 at 00 45 54](https://user-images.githubusercontent.com/73422344/226664138-af73c66a-86f3-4216-bd28-f945838dbe78.gif) |
 ```swift
