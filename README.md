@@ -1,5 +1,6 @@
 # CHGlassmorphismView
-![frontPhoto](https://user-images.githubusercontent.com/73422344/224745495-d3280067-b278-4ea0-846c-9237a1b14b13.png)
+![frontPhoto](https://github.com/Chaehui-Seo/CHGlassmorphismView/assets/73422344/347a0b5f-08a2-477e-861f-993278ba5f35)
+
 
 Glassmorphism is a design style using a background blur effect, which makes the view look like a floating translucent glass.
 ### ⚠️ still in progress ⚠️
