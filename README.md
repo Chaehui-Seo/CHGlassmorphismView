@@ -6,7 +6,7 @@ Glassmorphism is a design style using a background blur effect, which makes the 
 ### ⚠️ still in progress ⚠️
 
 ## Requirements
-- iOS 13.0+
+- iOS 11.0+
 
 ## Installation
 ### Swift Package Manager
