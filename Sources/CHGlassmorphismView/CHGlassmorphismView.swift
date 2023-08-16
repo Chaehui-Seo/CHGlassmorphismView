@@ -35,6 +35,17 @@ public class CHGlassmorphismView: UIView {
     }
     
     // MARK: - Public Method
+    /// Apply glassmorphism effect to the CHGlassmorphismView
+    public func makeGlassmorphismEffect(theme: CHTheme,
+                                        density: CGFloat = 0.65,
+                                        cornerRadius: CGFloat = 20,
+                                        distance: CGFloat = 20) {
+        self.setTheme(theme: theme)
+        self.setBlurDensity(with: density)
+        self.setCornerRadius(cornerRadius)
+        self.setDistance(distance)
+    }
+    
     /// Customizes theme by changing base view's background color.
     /// .light and .dark is available.
     public func setTheme(theme: CHTheme) {
