@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CHGlassmorphismView'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Assistant for Glassmorphism UI in iOS'
   
   # Set Swift version
@@ -30,7 +30,7 @@ This library is an assistant of making glassmorphism UI in iOS with UIKit.
   s.author           = { 'Chaehui-Seo' => 'sch0991@naver.com' }
   s.source           = { :git => 'https://github.com/Chaehui-Seo/CHGlassmorphismView.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'Sources/CHGlassmorphismView/**/*'
   
